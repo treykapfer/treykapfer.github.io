@@ -28,6 +28,8 @@
 
 
 /*SET DEFAULTS*/
+
+/*clear margin and padding*/
 * {
     border: 1px solid red;
     margin: 0px;
@@ -98,6 +100,7 @@ main, #personal_profile, .small_container {
 h1 {
     font-size: 7em;
     text-align: center;
+    position: absolute;
 
     -webkit-animation: focus 6s linear;
     -moz-animation: focus 6s linear;

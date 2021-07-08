@@ -42,6 +42,27 @@ a:link, a:active, a:visited, a:hover {
     text-decoration: none;
 }
 
+/*COMBINED PROPS*/
+/* flex column */
+/* flex row */
+/*global padding*/
+/*global margin*/
+/*tiny edge*/
+
+/*CONTAINER*/
+#container {
+    margin: 0px auto;
+    max-width: 1444px;
+}
+
+/*CHILDREN OF CONTAINER*/
+/*HEADER*/
+/*CANVAS*/
+#canvas {
+    width: 100%;
+    height: 7em;
+}
+
 /* PULSATING TITLE*/
 h1 {
     font-size: 7em;
@@ -66,27 +87,6 @@ h1 {
     0% { text-shadow: 0 0 5em var(--highlight); }
     50% { text-shadow: 0 0 2em var(--highlight); }
     100% { text-shadow:  .025em .025em 0 var(--highlight); }
-}
-
-/*COMBINED PROPS*/
-/* flex column */
-/* flex row */
-/*global padding*/
-/*global margin*/
-/*tiny edge*/
-
-/*CONTAINER*/
-#container {
-    margin: 0px auto;
-    max-width: 1444px;
-}
-
-/*CHILDREN OF CONTAINER*/
-/*HEADER*/
-/*CANVAS*/
-#canvas {
-    width: 100%;
-    height: 7rem;
 }
 
 /*MAIN COMPONENTS*/

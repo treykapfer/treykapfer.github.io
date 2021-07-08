@@ -19,13 +19,22 @@
     --rounderEdge: 25px;
     --globalMar: 1em;
     --globalPad: 1em;
+    --largeIMG: 420px;
+    --medIMG: 276px;
     /*fonts*/
     --defaultFont: 'Roboto', sans-serif;
     --impactFont: 'Encode Sans SC', sans-serif;
 }
 
+
 /*SET DEFAULTS*/
-body {
+* {
+    border: 1px solid red;
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
     width: 100%;
     height: 100%;
     font-family: var(--defaultFont);
@@ -37,6 +46,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: var(--impactFont);
 }
 
+/* clear links */
 a:link, a:active, a:visited, a:hover {
     color: var(--defaultColor);
     text-decoration: none;
@@ -44,6 +54,10 @@ a:link, a:active, a:visited, a:hover {
 
 /*COMBINED PROPS*/
 /* flex column */
+main, #personal_profile {
+    display: flex;
+    flex-direction: column;
+}
 /* flex row */
 /*global padding*/
 /*global margin*/
@@ -62,31 +76,34 @@ a:link, a:active, a:visited, a:hover {
     width: 100%;
     height: 7em;
 }
+/*MAIN COMPONENTS*/
 
+/*PERSONAL PROFILE*/
 /* PULSATING TITLE*/
 h1 {
     font-size: 7em;
     text-align: center;
 
-    -webkit-animation: focus 5s linear;
-    -moz-animation: focus 5s linear;
-    -ms-animation: focus 5s linear;
-    -o-animation: focus 5s linear;
-    animation: focus 5s linear;
+    -webkit-animation: focus 6s linear;
+    -moz-animation: focus 6s linear;
+    -ms-animation: focus 6s linear;
+    -o-animation: focus 6s linear;
+    animation: focus 6s linear;
 
     text-shadow: .025em .025em 0 var(--highlight);
 }
 
 @keyframes focus {
-    0% { text-shadow: 0 0 5em var(--highlight); }
-    50% { text-shadow: 0 0 2em var(--highlight); }
+    0% { text-shadow: 0 0 4em var(--highlight); }
     100% { text-shadow:  .025em .025em 0 var(--highlight); }
 }
 
 @-webkit-keyframes focus {
-    0% { text-shadow: 0 0 5em var(--highlight); }
-    50% { text-shadow: 0 0 2em var(--highlight); }
+    0% { text-shadow: 0 0 4em var(--highlight); }
     100% { text-shadow:  .025em .025em 0 var(--highlight); }
 }
 
-/*MAIN COMPONENTS*/
+#personal_profile img {
+    max-width: var(--largeIMG);
+    height: auto;
+}

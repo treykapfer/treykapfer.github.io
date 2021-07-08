@@ -122,8 +122,12 @@ h1 {
     width: 85%;
 }
 
+.project_row {
+    text-align: center;
+}
+
 .project_row:nth-child(2) {
-    flex-direction: row-reverse; 
+    flex-direction: row-reverse;
 }
 
 #personal_profile img {

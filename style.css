@@ -44,6 +44,11 @@ html, body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--impactFont);
+    font-size: 3em;
+}
+
+p {
+    font-size: 1.5em;
 }
 
 /* clear links */
@@ -54,11 +59,21 @@ a:link, a:active, a:visited, a:hover {
 
 /*COMBINED PROPS*/
 /* flex column */
-main, #personal_profile {
+main, #personal_profile, .small_container {
     display: flex;
     flex-direction: column;
 }
+
+/* align center */
+main, #personal_profile, .small_container {
+    align-items: center;
+}
+
 /* flex row */
+.project_row {
+    display: flex;
+    flex-direction: row;
+}
 /*global padding*/
 /*global margin*/
 /*tiny edge*/
@@ -101,6 +116,14 @@ h1 {
 @-webkit-keyframes focus {
     0% { text-shadow: 0 0 4em var(--highlight); }
     100% { text-shadow:  .025em .025em 0 var(--highlight); }
+}
+
+#personal_profile, #project_container {
+    width: 85%;
+}
+
+.project_row:nth-child(2) {
+    flex-direction: row-reverse; 
 }
 
 #personal_profile img {

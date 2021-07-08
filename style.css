@@ -6,9 +6,9 @@
 /* GLOBAL VARIABLES */
 :root {
     /*color scheme*/
-    --defaultColor: black;
+    --defaultColor: white;
     --secondaryColor: black;
-    --tertiaryColor: black;
+    --tertiaryColor: grey;
     --impactLight: black;
     --dangerDark: black;
     --dangerLight: black;
@@ -29,9 +29,33 @@
 body {
     width: 100%;
     height: 100%;
+    font-family: var(--defaultFont);
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--impactFont);
+}
+
+a:link, a:active, a:visited, a:hover {
+    color: var(--secondaryColor);
+    text-decoration: none;
+}
+
+/*COMBINED PROPS*/
+/* flex column */
+/* flex row */
+/*global padding*/
+/*global margin*/
+/*tiny edge*/
+
+/*CONTAINER*/
 #container {
     margin: 0px auto;
     max-width: 1444px;
 }
+
+/*CHILDREN OF CONTAINER*/
+/*HEADER*/
+/*CANVAS*/
+
+/*MAIN COMPONENTS*/

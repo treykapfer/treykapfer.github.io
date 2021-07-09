@@ -81,7 +81,7 @@ main, #personal_profile, .row_container, header {
 }
 
 /*justify center */
-nav, .img_container, #title {
+nav, #title {
     justify-content: center;
 }
 
@@ -193,7 +193,7 @@ h3, #personal_profile p, footer h2 {
         width: var(--largeIMG);
         height: auto;
         opacity: 75%;
-        background-color: var(--dampen);
+        /* background-color: var(--dampen); */
     }
 
         .img_container img {

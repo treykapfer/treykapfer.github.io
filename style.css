@@ -73,10 +73,16 @@ main, #personal_profile, .small_container {
 }
 
 /* flex row */
-.project_row {
+.project_row, nav {
     display: flex;
     flex-direction: row;
 }
+
+/*justify center */
+nav {
+    justify-content: center;
+}
+
 /*global padding*/
 #personal_profile {
     padding: var(--globalPad);
@@ -139,6 +145,12 @@ main, #personal_profile, .small_container {
 }
 
 /*PROJECT SECTION*/
+/*ALL BORDER TOPS ARE H3S*/
+h3 {
+    border-top: 2px solid var(--defaultColor);
+    border-bottom: 2px solid var(--defaultColor);
+}
+
 .project_row {
     text-align: center;
 }

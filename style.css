@@ -33,7 +33,6 @@
 
 /*clear margin and padding*/
 * {
-    border: 1px solid red;
     margin: 0px;
     padding: 0px;
 }
@@ -94,10 +93,6 @@ main, #personal_profile, .small_container {
 /*CHILDREN OF CONTAINER*/
 /*HEADER*/
 /*CANVAS*/
-#canvas {
-    width: 100%;
-    height: 10em;
-}
 /*MAIN COMPONENTS*/
 
 /*PERSONAL PROFILE*/
@@ -110,7 +105,6 @@ main, #personal_profile, .small_container {
 /*TITLE SECTION*/
 #title {
     text-align: center;
-    position: absolute;
 
     -webkit-animation: focus 6s linear;
     -moz-animation: focus 6s linear;

@@ -207,6 +207,10 @@ h2 {
         flex-direction: row-reverse;
     }
 
+        /* .project_row:nth-child(2) p {
+            text-align: right;
+        } */
+
     .img_container {
         width: var(--largeIMG);
         height: auto;
@@ -225,6 +229,8 @@ h2 {
 
         .project_content p {
             margin-top: .5em;
+            text-indent: 1em;
+            text-align: left;
         }
 
 /* FOOTER */

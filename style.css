@@ -10,12 +10,11 @@
     /*color scheme*/
     --defaultColor: white;
     --secondaryColor: black;
-    --tertiaryColor: grey;
+    --tertiaryColor: rgb(53, 143, 184);
     --impactLight: black;
     --dangerDark: black;
     --dangerLight: black;
-    --highlight: rgb(99, 53, 184);
-    --dampen: rgba(255, 255, 255, 0.25);
+    --highlight: rgb(168, 214, 235);
     /* sizes */
     --tinyEdge: 5px;
     --roundEdge: 10px;
@@ -43,7 +42,7 @@ html, body {
     height: 100%;
     font-family: var(--defaultFont);
     background-color: var(--secondaryColor);
-    color: var(--defaultColor);
+    color: var(--defaultColor); /*highlight then changes to default when scrolled*/
     scroll-behavior: smooth;
 }
 
@@ -52,7 +51,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 3em;
 }
 
-p {
+p, a {
     font-size: 1.5em;
 }
 
@@ -64,7 +63,7 @@ a:link, a:active, a:visited, a:hover {
 
 /*COMBINED PROPS*/
 /* flex column */
-main, #personal_profile, .row_container, .img_container, #title, footer {
+main, #personal_profile, .row_container, .img_container, #title, footer, #contact_nav a {
     display: flex;
     flex-direction: column;
 }
@@ -100,6 +99,22 @@ nav, #title {
     margin: 0px auto;
 }
 
+/*BORDER BOTTOM*/
+h3, nav a, #about {
+    border-bottom: 2px solid var(--defaultColor);
+}
+
+/*BORDER TOP*/
+.big_p, footer h2, h3 {
+    border-top: 2px solid var(--defaultColor);
+}
+
+/*LIGHT BLUE FONT*/
+/*ONLY ID's so it can ovveride text*/
+#scrolling_title, #info_bar {
+    color: var(--highlight);
+}
+
 /*CHILDREN OF CONTAINER*/
 /*HEADER*/
 
@@ -111,19 +126,19 @@ header {
     header img {
         height: 50px;
         width: auto;
-        margin-left: .5em;
+        margin-left: var(--globalMar);
     }
 
     nav a {
         font-family: var(--impactFont);
         font-size: 1.5em;
-        border-bottom: 2px solid var(--defaultColor);
     }
 
         nav a:hover {
-            transform: translateY(-.1em);
-            border-bottom: 2px solid var(--highlight);
+            transform: translateY(-.2em);
+            border-bottom: 2px solid var(--tertiaryColor);
             transition: 250ms;
+            color: var(--highlight);
         }
 
         header img:hover {
@@ -148,13 +163,14 @@ main, footer, #contact_container {
 /*TITLE SECTION*/
 #title {
     text-align: center;
-    text-shadow: .025em .025em 0 var(--highlight);
+    text-shadow: .025em .025em 0 var(--tertiaryColor);
     height: 30em;
 }
+
     #title h1 {
         font-size: 7em;
     }
-    #title h4 {
+    #scrolling_title {
         font-size: 1.5em;
     }
 
@@ -175,11 +191,6 @@ h2 {
     #project_container h2 {
         margin-bottom: 1em;
     }
-
-h3, .big_p {
-    border-top: 2px solid var(--defaultColor);
-    border-bottom: 2px solid var(--defaultColor);
-}
 
 .project_row {
     text-align: center;
@@ -210,20 +221,60 @@ h3, .big_p {
         }
 
 /* FOOTER */
-
-footer {
-}
-
 footer h2 {
-    border-top: 2px solid var(--defaultColor);
     margin-right: .5em;
     margin-left: .5em;
     padding-top: 1em;
     padding-bottom: .5em;
 }
 
-#copy {
+.copy {
     font-size: 100%;
     margin: 4em;
     text-align: right;
 }
+
+/*CONTACT NAV*/
+    #contact_nav a {
+        width: 72px;
+        height: 72px;
+        border: none;
+    }
+
+    #contact_nav a:hover {
+        transform: scale(90%);
+        transition: 250ms;
+    }
+
+    /*IMAGES AND HOVER EFFECTS*/
+        #phone_number {
+            background-image: url('img/phone_bw.png');
+        }
+            #phone_number:hover {
+                background-image: url('img/phone_color.png');
+            }
+
+        #email {
+            background-image: url('img/gmail_bw.png');
+        }
+            #email:hover {
+                background-image: url('img/gmail_color.png');
+            }
+
+        #github {
+            background-image: url('img/github_bw.png');
+        }
+            #github:hover {
+                background-image: url('img/github_color.png');
+            }
+
+        #linkedin {
+            background-image: url('img/linkedin_bw.png');
+        }
+            #linkedin:hover {
+                background-image: url('img/linkedin_color.png');
+            }
+        
+    #info_bar {
+        text-align: center;
+    }

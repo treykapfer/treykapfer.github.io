@@ -10,7 +10,7 @@
 </head>
 <body>
     <div id="container">
-        <header>
+        <header class="scroll_mark">
                 <img src="img/TJ_logo_update.png" alt="Logo failed to load">
                 <nav>
                     <a href="#container">Home</a>
@@ -20,7 +20,7 @@
                 </nav>
         </header>
         <main>
-            <div id="personal_profile">
+            <div id="personal_profile" class="scroll_mark">
                 <div id="title">
                     <h1>TJ Kapfer</h1>
                     <h4 id="scrolling_title">Front End Engineer</h4>
@@ -30,7 +30,7 @@
                 <p id="about" class="big_p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet, ipsam nemo voluptatem velit molestiae sunt minus placeat? Voluptatem illo nisi numquam laborum atque exercitationem cum, ipsam laboriosam ea ad neque! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet, ipsam nemo voluptatem velit molestiae sunt minus placeat? Voluptatem illo nisi numquam laborum atque exercitationem cum, ipsam laboriosam ea ad neque!</p>
             </div>
 
-            <div id="project_container">
+            <div id="project_container" class="scroll_mark">
                 <!-- every nth(2) child in this container displays the opposite direction -->
                 <h2>Portfolio</h2>
                 <div class="row_container">
@@ -79,19 +79,28 @@
             </div>
         </main>
         <footer>
-            <div id="contact_container">
+            <div id="contact_container" class="scroll_mark">
                 <h2>Lets Connect</h2>
                 <p class="big_p">
                     You can find me on the usual platforms. If you got a gig for me, phone is ideal. Lets make something cool together. &#9759; &#9759; &#9759;
                 </p>
                 <nav id="contact_nav">
-                    <a href="tel:123-456-7890" target="_blank">(913)669-0379</a>
-                    <a href="mailto:treykapfer@gmail.com" target="_blank">treykapfer@gmail.com</a>
-                    <a href="https://github.com/treykapfer" target="_blank">Github</a>
-                    <a href="https://www.linkedin.com/in/trey-kapfer-252ab5103/" target="_blank">LinkedIn</a>
+                    <a href="tel:913-669-0379" target="_blank" id="phone_number">
+                        <!-- <img src='img/phone_bw.png'> -->
+                    </a>
+                    <a href="mailto:treykapfer@gmail.com" target="_blank"  id="email">
+                        <!-- <img src='img/gmail_bw.png'> -->
+                    </a>
+                    <a href="https://github.com/treykapfer" target="_blank"  id="github">
+                        <!-- <img src='img/github_bw.png'> -->
+                    </a>
+                    <a href="https://www.linkedin.com/in/trey-kapfer-252ab5103/" target="_blank"  id="linkedin">
+                        <!-- <img src='img/linkedin_bw.png'> -->
+                    </a>
                 </nav>
+                <p id="info_bar">the info you are hovering over will populate here</p>
             </div>
-            <p id="copy">&copy; TJ Kapfer 2021</p>
+            <p class="copy">&copy; TJ Kapfer 2021</p>
         </footer>
     </div>
     <!-- SCRIPTS -->

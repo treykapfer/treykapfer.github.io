@@ -91,7 +91,7 @@ nav, #title {
 }
 
 /*global margin*/
-.project_row, #personal_profile p, nav a {
+.project_row, .big_p, nav a {
     margin: var(--globalMar);
 }
 
@@ -158,7 +158,7 @@ main, footer, #contact_container {
         font-size: 1.5em;
     }
 
-    #personal_profile p {
+    .big_p {
         font-size: 2em;
         font-family: var(--secondaryFont);
         text-indent: 2em;
@@ -176,7 +176,7 @@ h2 {
         margin-bottom: 1em;
     }
 
-h3, #personal_profile p, footer h2 {
+h3, .big_p {
     border-top: 2px solid var(--defaultColor);
     border-bottom: 2px solid var(--defaultColor);
 }
@@ -204,3 +204,26 @@ h3, #personal_profile p, footer h2 {
     .project_content {
         margin: 0px var(--globalMar);
     }
+
+        .project_content p {
+            margin-top: .5em;
+        }
+
+/* FOOTER */
+
+footer {
+}
+
+footer h2 {
+    border-top: 2px solid var(--defaultColor);
+    margin-right: .5em;
+    margin-left: .5em;
+    padding-top: 1em;
+    padding-bottom: .5em;
+}
+
+#copy {
+    font-size: 100%;
+    margin: 4em;
+    text-align: right;
+}

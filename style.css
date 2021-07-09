@@ -1,5 +1,6 @@
 /*import Roboto and Encode*/
 @import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC&family=Roboto&family=Roboto+Slab&display=swap');
+@import url('keyframes.css');
 /*font-family: 'Encode Sans SC', sans-serif;*/
 /* font-family: 'Roboto', sans-serif; */
 /* font-family: 'Roboto Slab', serif; */
@@ -31,8 +32,7 @@
 
 
 /*SET DEFAULTS*/
-
-/*clear margin and padding*/
+/*CLEAR MARGIN AND PADDING*/
 * {
     margin: 0px;
     padding: 0px;
@@ -44,6 +44,7 @@ html, body {
     font-family: var(--defaultFont);
     background-color: var(--secondaryColor);
     color: var(--defaultColor);
+    scroll-behavior: smooth;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -63,29 +64,29 @@ a:link, a:active, a:visited, a:hover {
 
 /*COMBINED PROPS*/
 /* flex column */
-main, #personal_profile, .small_container, .img_container {
+main, #personal_profile, .row_container, .img_container, #title, footer {
     display: flex;
     flex-direction: column;
 }
 
-/* align center */
-main, #personal_profile, .small_container {
-    align-items: center;
-}
-
 /* flex row */
-.project_row, nav {
+.project_row, nav, header {
     display: flex;
     flex-direction: row;
 }
 
+/* align center */
+main, #personal_profile, .row_container, header {
+    align-items: center;
+}
+
 /*justify center */
-nav, .img_container {
+nav, .img_container, #title {
     justify-content: center;
 }
 
 /*global padding*/
-#personal_profile {
+#personal_profile, #project_container {
     padding: var(--globalPad);
 }
 
@@ -94,31 +95,53 @@ nav, .img_container {
     margin: var(--globalMar);
 }
 
-/*CONTAINER*/
-#container {
+/*CENTER*/
+#container, main, footer, #contact_container {
     margin: 0px auto;
-    max-width: 1444px;
 }
 
 /*CHILDREN OF CONTAINER*/
 /*HEADER*/
-nav a {
-    font-family: var(--impactFont);
-    font-size: 1.5em;
-    border-bottom: 2px solid var(--defaultColor);
+
+header {
+    position: fixed;
+    z-index: 1;
 }
 
-    nav a:hover {
-        transform: translateY(-.1em);
-        border-bottom: 2px solid var(--highlight);
-        transition: 250ms;
+    header img {
+        height: 50px;
+        width: auto;
+        margin-left: .5em;
     }
 
+    nav a {
+        font-family: var(--impactFont);
+        font-size: 1.5em;
+        border-bottom: 2px solid var(--defaultColor);
+    }
+
+        nav a:hover {
+            transform: translateY(-.1em);
+            border-bottom: 2px solid var(--highlight);
+            transition: 250ms;
+        }
+
+        header img:hover {
+            animation: shake .5s;
+        }
+
 /*MAIN COMPONENTS*/
+main, footer, #contact_container {
+    max-width: 1444px;
+}
 
 /*PERSONAL PROFILE*/
 
-#personal_profile, #project_container {
+#personal_profile {
+    margin-top: 4em;
+}
+
+#personal_profile, #project_container, #contact_container {
     width: 85%;
 }
 
@@ -126,28 +149,34 @@ nav a {
 #title {
     text-align: center;
     text-shadow: .025em .025em 0 var(--highlight);
+    height: 30em;
 }
     #title h1 {
         font-size: 7em;
     }
     #title h4 {
-        font-size: 1em;
+        font-size: 1.5em;
     }
 
     #personal_profile p {
         font-size: 2em;
         font-family: var(--secondaryFont);
         text-indent: 2em;
+        padding: var(--globalPad) 0;
     }
 
 /*PROJECT SECTION*/
 /*ALL BORDER TOPS ARE H3S*/
 h2 {
     font-size: 4em;
-    margin-left: .25em;
+    text-align: center;
 }
 
-h3 {
+    #project_container h2 {
+        margin-bottom: 1em;
+    }
+
+h3, #personal_profile p, footer h2 {
     border-top: 2px solid var(--defaultColor);
     border-bottom: 2px solid var(--defaultColor);
 }

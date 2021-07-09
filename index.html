@@ -6,34 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TJ Kapfer — Personal Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/jpg" href="img/favicon.png"/>
 </head>
 <body>
     <div id="container">
         <header>
+                <img src="img/TJ_logo_update.png" alt="Logo failed to load">
                 <nav>
-                    <a href="">Github</a>
-                    <a href="">LinkedIn</a>
-                    <a href="">Email</a>
-                    <a href="">Resume</a>
+                    <a href="#container">Home</a>
+                    <a href="#scrolling_title">About</a>
+                    <a href="#project_container">Projects</a>
+                    <a href="#contact_container">Contact</a>
                 </nav>
         </header>
         <main>
             <div id="personal_profile">
                 <div id="title">
                     <h1>TJ Kapfer</h1>
-                    <h4>Front End Engineer</h4>
+                    <h4 id="scrolling_title">Front End Engineer</h4>
                 </div>
                 <!-- Personal profile info - a summary with large text/font, perhaps a third font, with basic bio/info about me -->
                 <!-- all of the elements in main have a css position of -100, then they pop into their position as you scroll down -->
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet, ipsam nemo voluptatem velit molestiae sunt minus placeat? Voluptatem illo nisi numquam laborum atque exercitationem cum, ipsam laboriosam ea ad neque! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet, ipsam nemo voluptatem velit molestiae sunt minus placeat? Voluptatem illo nisi numquam laborum atque exercitationem cum, ipsam laboriosam ea ad neque!</p>
+                <p id="about">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet, ipsam nemo voluptatem velit molestiae sunt minus placeat? Voluptatem illo nisi numquam laborum atque exercitationem cum, ipsam laboriosam ea ad neque! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet, ipsam nemo voluptatem velit molestiae sunt minus placeat? Voluptatem illo nisi numquam laborum atque exercitationem cum, ipsam laboriosam ea ad neque!</p>
             </div>
 
             <div id="project_container">
-
-                
                 <!-- every nth(2) child in this container displays the opposite direction -->
                 <h2>Portfolio</h2>
-                <div class="small_container">
+                <div class="row_container">
                     <div class="project_row">
                         <div class="img_container">
                             <img src="img/Junta-TD.png" alt="image failed to load...">
@@ -42,8 +42,8 @@
                             <h3>WoW Blog</h3>
                             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet, ipsam nemo voluptatem velit molestiae sunt minus placeat? Voluptatem illo nisi numquam laborum atque exercitationem cum, ipsam laboriosam ea ad neque! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet, ipsam nemo voluptatem velit molestiae sunt minus placeat? Voluptatem illo nisi numquam laborum atque exercitationem cum, ipsam laboriosam ea ad neque!</p>
                             <nav>
-                                <a href="" class="btn">Code</a>
-                                <a href="" class="btn">Demo</a>
+                                <a href="https://github.com/treykapfer/3ustinBlog-main" target= "_blank">Code</a>
+                                <a href="" target= "_blank">Demo</a>
                             </nav>
                         </div>
                     </div>
@@ -56,8 +56,8 @@
                             <h3>Junta Commander</h3>
                             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet, ipsam nemo voluptatem velit molestiae sunt minus placeat? Voluptatem illo nisi numquam laborum atque exercitationem cum, ipsam laboriosam ea ad neque! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet, ipsam nemo voluptatem velit molestiae sunt minus placeat? Voluptatem illo nisi numquam laborum atque exercitationem cum, ipsam laboriosam ea ad neque!</p>
                             <nav>
-                                <a href="" class="btn">Code</a>
-                                <a href="" class="btn">Demo</a>
+                                <a href="https://github.com/treykapfer/JuntaTDLite" target= "_blank">Code</a>
+                                <a href="" target= "_blank">Demo</a>
                             </nav>
                         </div>
                     </div>
@@ -70,8 +70,8 @@
                             <h3>Ghoul Grinder</h3>
                             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet, ipsam nemo voluptatem velit molestiae sunt minus placeat? Voluptatem illo nisi numquam laborum atque exercitationem cum, ipsam laboriosam ea ad neque! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet, ipsam nemo voluptatem velit molestiae sunt minus placeat? Voluptatem illo nisi numquam laborum atque exercitationem cum, ipsam laboriosam ea ad neque!</p>
                             <nav>
-                                <a href="" class="btn">Code</a>
-                                <a href="" class="btn">Demo</a>
+                                <a href="https://github.com/3Ustin/Repo" target= "_blank">Code</a>
+                                <a href="" target= "_blank">Demo</a>
                             </nav>
                         </div>
                     </div>
@@ -79,9 +79,12 @@
             </div>
         </main>
         <footer>
+            <div id="contact_container">
+                <h2>Lets Connect</h2>
+            </div>
         </footer>
     </div>
     <!-- SCRIPTS -->
-    <script src="script/fadeHandler.js"></script>
+    <script src="script/"></script>
 </body>
 </html>

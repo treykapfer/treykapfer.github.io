@@ -1,6 +1,7 @@
 /*import Roboto and Encode*/
 @import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC&family=Roboto&family=Roboto+Slab&display=swap');
 @import url('keyframes.css');
+@import url('wave.css');
 /*font-family: 'Encode Sans SC', sans-serif;*/
 /* font-family: 'Roboto', sans-serif; */
 /* font-family: 'Roboto Slab', serif; */
@@ -51,7 +52,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 3em;
 }
 
-p, a {
+p {
     font-size: 1.5em;
 }
 
@@ -126,7 +127,7 @@ header {
     header img {
         height: 50px;
         width: auto;
-        margin-left: var(--globalMar);
+        margin: var(--globalMar);
     }
 
     nav a {
@@ -180,6 +181,12 @@ main, footer, #contact_container {
         text-indent: 2em;
         padding: var(--globalPad) 0;
     }
+
+/*ABOUT SECTION*/
+#about a:hover {
+    color: var(--highlight);
+}
+
 
 /*PROJECT SECTION*/
 /*ALL BORDER TOPS ARE H3S*/

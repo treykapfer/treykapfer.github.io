@@ -102,11 +102,21 @@ nav, .img_container {
 
 /*CHILDREN OF CONTAINER*/
 /*HEADER*/
-/*CANVAS*/
+nav a {
+    font-family: var(--impactFont);
+    font-size: 1.5em;
+    border-bottom: 2px solid var(--defaultColor);
+}
+
+    nav a:hover {
+        transform: translateY(-.1em);
+        border-bottom: 2px solid var(--highlight);
+        transition: 250ms;
+    }
+
 /*MAIN COMPONENTS*/
 
 /*PERSONAL PROFILE*/
-/* PULSATING TITLE*/
 
 #personal_profile, #project_container {
     width: 85%;
@@ -165,15 +175,3 @@ h3 {
     .project_content {
         margin: 0px var(--globalMar);
     }
-
-    nav a {
-        font-family: var(--impactFont);
-        font-size: 1.5em;
-        border-bottom: 2px solid var(--defaultColor);
-    }
-
-        nav a:hover {
-            transform: translateY(-.1em);
-            border-bottom: 2px solid var(--highlight);
-            transition: 250ms;
-        }

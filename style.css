@@ -13,7 +13,8 @@
     --impactLight: black;
     --dangerDark: black;
     --dangerLight: black;
-    --highlight: rgb(41, 0, 117);
+    --highlight: rgb(99, 53, 184);
+    --dampen: rgba(255, 255, 255, 0.25);
     /* sizes */
     --tinyEdge: 5px;
     --roundEdge: 10px;
@@ -62,7 +63,7 @@ a:link, a:active, a:visited, a:hover {
 
 /*COMBINED PROPS*/
 /* flex column */
-main, #personal_profile, .small_container {
+main, #personal_profile, .small_container, .img_container {
     display: flex;
     flex-direction: column;
 }
@@ -79,7 +80,7 @@ main, #personal_profile, .small_container {
 }
 
 /*justify center */
-nav {
+nav, .img_container {
     justify-content: center;
 }
 
@@ -87,8 +88,11 @@ nav {
 #personal_profile {
     padding: var(--globalPad);
 }
+
 /*global margin*/
-/*tiny edge*/
+.project_row, #personal_profile p, nav a {
+    margin: var(--globalMar);
+}
 
 /*CONTAINER*/
 #container {
@@ -111,13 +115,6 @@ nav {
 /*TITLE SECTION*/
 #title {
     text-align: center;
-
-    -webkit-animation: focus 6s linear;
-    -moz-animation: focus 6s linear;
-    -ms-animation: focus 6s linear;
-    -o-animation: focus 6s linear;
-    animation: focus 6s linear;
-
     text-shadow: .025em .025em 0 var(--highlight);
 }
     #title h1 {
@@ -127,25 +124,19 @@ nav {
         font-size: 1em;
     }
 
-@keyframes focus {
-    0% { text-shadow: 0 0 4em var(--highlight); }
-    100% { text-shadow:  .025em .025em 0 var(--highlight); }
-}
-
-@-webkit-keyframes focus {
-    0% { text-shadow: 0 0 4em var(--highlight); }
-    100% { text-shadow:  .025em .025em 0 var(--highlight); }
-}
-
-#personal_profile p {
-    font-size: 2em;
-    font-family: var(--secondaryFont);
-    text-indent: 2em;
-
-}
+    #personal_profile p {
+        font-size: 2em;
+        font-family: var(--secondaryFont);
+        text-indent: 2em;
+    }
 
 /*PROJECT SECTION*/
 /*ALL BORDER TOPS ARE H3S*/
+h2 {
+    font-size: 4em;
+    margin-left: .25em;
+}
+
 h3 {
     border-top: 2px solid var(--defaultColor);
     border-bottom: 2px solid var(--defaultColor);
@@ -155,11 +146,34 @@ h3 {
     text-align: center;
 }
 
-    #personal_profile img {
-        max-width: var(--largeIMG);
-        height: auto;
-    }
-
     .project_row:nth-child(2) {
         flex-direction: row-reverse;
     }
+
+    .img_container {
+        width: var(--largeIMG);
+        height: auto;
+        opacity: 75%;
+        background-color: var(--dampen);
+    }
+
+        .img_container img {
+            width: var(--largeIMG);
+            object-fit: scale-down;
+        }
+
+    .project_content {
+        margin: 0px var(--globalMar);
+    }
+
+    nav a {
+        font-family: var(--impactFont);
+        font-size: 1.5em;
+        border-bottom: 2px solid var(--defaultColor);
+    }
+
+        nav a:hover {
+            transform: translateY(-.1em);
+            border-bottom: 2px solid var(--highlight);
+            transition: 250ms;
+        }

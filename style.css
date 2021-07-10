@@ -122,7 +122,17 @@ h3, nav a, #about {
 header {
     position: fixed;
     z-index: 1;
+    background-image: linear-gradient(black, rgba(0, 0, 0, 0));
+    height: 13em;
+    width: 100%;
+    align-items: flex-start;
 }
+/*add js script that has the nav appear when you load
+but defaults to 0 opacity otherwise*/
+    header:hover {
+        opacity: 1;
+        transition: 250ms;
+    }
 
     header img {
         height: 50px;

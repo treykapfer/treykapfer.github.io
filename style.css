@@ -23,7 +23,7 @@
     --globalMar: 1em;
     --globalPad: 1em;
     --largeIMG: 424px;
-    --medIMG: 276px;
+    --largerIMG: 720px;
     /*fonts*/
     --defaultFont: 'Roboto', sans-serif;
     --impactFont: 'Encode Sans SC', sans-serif;
@@ -129,7 +129,7 @@ header {
 }
 /*add js script that has the nav appear when you load
 but defaults to 0 opacity otherwise*/
-    header:hover {
+    nav a:hover {
         opacity: 1;
         transition: 250ms;
     }
@@ -231,7 +231,7 @@ h2 {
     }
 
         .img_container img {
-            width: var(--largeIMG);
+            width: fit-content;
             object-fit: scale-down;
         }
 
@@ -303,3 +303,39 @@ footer h2 {
     #info_bar {
         text-align: center;
     }
+
+/*ALL MEDIA QUERIES*/
+@media only screen and (max-width: 1080px) {
+    .project_row {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .img_container {
+        width: var(--largerIMG);
+        height: 1em;
+        border: none;
+        overflow: hidden;
+        margin-top: 2em;
+        opacity: 50%;
+        cursor: pointer;
+    }
+    
+    /*change this to a javascript on click*/
+        .img_container:hover {
+            height: 720px;
+            opacity: 100%;
+            transition: 250ms;
+        }
+
+    .project_row:nth-child(2) {
+        flex-direction: column-reverse;
+    }
+
+    .project_content {
+        border-bottom: 2px solid var(--defaultColor);
+    }
+
+
+
+}

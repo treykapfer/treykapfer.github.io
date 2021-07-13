@@ -233,6 +233,7 @@ h2 {
         .img_container img {
             width: fit-content;
             object-fit: scale-down;
+            border-radius: var(--roundEdge);
         }
 
     .project_content {
@@ -323,7 +324,7 @@ footer h2 {
     
     /*change this to a javascript on click*/
         .img_container:hover {
-            height: 720px;
+            height: var(--largerIMG);
             opacity: 100%;
             transition: 250ms;
         }
@@ -336,6 +337,36 @@ footer h2 {
         border-bottom: 2px solid var(--defaultColor);
     }
 
+@media only screen and (max-width: 748px) {
+    /*FONT SIZES*/
+    h1, h2, h3, h4, h5, h6 {
+        font-size: 2.5em;
+    }
+    p, nav a, #scrolling_title {
+        font-size: 1em;
+    }
+    #title h1 {
+        font-size: 5.5em;
+    }
+    .big_p {
+        font-size: 1.5em;
+    }
+    h2 {
+        font-size: 3em;
+    }
 
+    .img_container {
+        width: var(--largeIMG);
+    }
+
+    header img {
+        height: 26px;
+    }
+
+    .img_container:hover {
+        height: var(--largeIMG);
+        opacity: 100%;
+        transition: 250ms;
+    }
 
 }

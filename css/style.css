@@ -1,7 +1,8 @@
 /*import Roboto and Encode*/
 @import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC&family=Roboto&family=Roboto+Slab&display=swap');
-@import url('css/wave.css');
-@import url('glitch/wave.css');
+@import url('wave.css');
+@import url('keyframes.css');
+@import url('glitch.css');
 /*font-family: 'Encode Sans SC', sans-serif;*/
 /* font-family: 'Roboto', sans-serif; */
 /* font-family: 'Roboto Slab', serif; */
@@ -29,26 +30,6 @@
     --defaultFont: 'Roboto', sans-serif;
     --impactFont: 'Encode Sans SC', sans-serif;
     --secondaryFont: 'Roboto Slab', serif;
-}
-
-/*KEYFRAME ANIMATIONS*/
-@keyframes blackFadeInOut {
-    0% {
-        -moz-box-shadow:    inset 0 0 1em #000000;
-        -webkit-box-shadow: inset 0 0 1em #000000;
-        box-shadow:         inset 0 0 1em #000000;
-    }
-    50% {
-        -moz-box-shadow:    inset 0 0 15em #000000;
-        -webkit-box-shadow: inset 0 0 15em #000000;
-        box-shadow:         inset 0 0 15em #000000;
-    }
-
-    100% {
-        -moz-box-shadow:    inset 0 0 1em #000000;
-        -webkit-box-shadow: inset 0 0 1em #000000;
-        box-shadow:         inset 0 0 1em #000000;
-    }
 }
 
 /*SET DEFAULTS*/
@@ -195,7 +176,8 @@ main, footer, #contact_container {
     width: 85%;
 
     background-image: url('../img/tv_noise_gif.gif');
-    background-size: 100%;
+    background-size: cover;
+    background-position-x: center;
 
     -moz-box-shadow:    inset 0 0 1em #000000;
     -webkit-box-shadow: inset 0 0 1em #000000;
@@ -206,6 +188,7 @@ main, footer, #contact_container {
     -o-animation:      blackFadeInOut 5s infinite; /* Opera 12+ */
     animation:         blackFadeInOut 5s infinite; /* IE 10+, Fx 29+ */
 
+    border: 2px solid var(--defaultColor);
     
 }
 
@@ -411,6 +394,10 @@ footer h2 {
         width: 40px;
         height: 40px;
         border: none;
+    }
+
+    #title {
+        height: 20em;
     }
 
     /*no hover - change to color*/

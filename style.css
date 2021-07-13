@@ -382,4 +382,17 @@ footer h2 {
         border: none;
     }
 
+    /*no hover - change to color*/
+        #phone_number {
+            background-image: url('img/phone_color.png');
+        }
+        #email {
+            background-image: url('img/gmail_color.png');
+        }
+        #github {
+            background-image: url('img/github_color.png');
+        }
+        #linkedin {
+            background-image: url('img/linkedin_color.png');
+        }
 }

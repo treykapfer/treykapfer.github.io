@@ -300,7 +300,11 @@ footer h2 {
             #linkedin:hover {
                 background-image: url('img/linkedin_color.png');
             }
-        
+
+        #phone_number, #email, #github, #linkedin {
+            background-size: cover;
+        }    
+
     #info_bar {
         text-align: center;
     }
@@ -323,7 +327,7 @@ footer h2 {
     }
     
     /*change this to a javascript on click*/
-        .img_container:hover {
+        .img_container:hover, .img_container:active {
             height: var(--largerIMG);
             opacity: 100%;
             transition: 250ms;
@@ -336,6 +340,7 @@ footer h2 {
     .project_content {
         border-bottom: 2px solid var(--defaultColor);
     }
+}
 
 @media only screen and (max-width: 748px) {
     /*FONT SIZES*/
@@ -363,10 +368,16 @@ footer h2 {
         height: 26px;
     }
 
-    .img_container:hover {
+    .img_container:active {
         height: var(--largeIMG);
         opacity: 100%;
         transition: 250ms;
+    }
+
+    #contact_nav a {
+        width: 40px;
+        height: 40px;
+        border: none;
     }
 
 }

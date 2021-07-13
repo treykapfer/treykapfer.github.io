@@ -1,7 +1,8 @@
 /*import Roboto and Encode*/
 @import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC&family=Roboto&family=Roboto+Slab&display=swap');
-@import url('keyframes.css');
-@import url('wave.css');
+@import url('css/keyframes.css');
+@import url('css/wave.css');
+@import url('glitch/wave.css');
 /*font-family: 'Encode Sans SC', sans-serif;*/
 /* font-family: 'Roboto', sans-serif; */
 /* font-family: 'Roboto Slab', serif; */

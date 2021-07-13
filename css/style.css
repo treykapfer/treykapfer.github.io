@@ -414,16 +414,17 @@ footer h2 {
         height: 26px;
     }
 
-        .img_container img {
-            max-width: var(--largeIMG);
-        }
+    /*IMG CONTAINER*/
+    .img_container img {
+        max-width: var(--largeIMG);
+    }
 
-        .img_container:hover, .img_container:active {
-            height: var(--largeIMG);
-            opacity: 100%;
-            transition: 250ms;
-            text-indent: -9999px;
-        }
+    .img_container:hover, .img_container:active {
+        height: var(--largeIMG);
+        opacity: 100%;
+        transition: 250ms;
+        text-indent: -9999px;
+    }
 
     #contact_nav a {
         width: 40px;
@@ -452,5 +453,7 @@ footer h2 {
     header img, header nav a {
         margin: .5em;
     }
+
+    /*chanage*/
     
 }

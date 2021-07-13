@@ -262,6 +262,10 @@ h2 {
             border-radius: var(--roundEdge);
         }
 
+        .img_container p {
+            display: none;
+        }
+
     .project_content {
         margin: 0px var(--globalMar);
     }
@@ -351,6 +355,14 @@ footer h2 {
         margin-top: 2em;
         opacity: 50%;
         cursor: pointer;
+        text-indent: 1em;
+        font-family: var(--impactFont);
+    }
+
+    .img_container p {
+        text-align: left;
+        display: inline-block;
+        position: absolute;
     }
     
     /*change this to a javascript on click*/
@@ -358,6 +370,7 @@ footer h2 {
             height: var(--largerIMG);
             opacity: 100%;
             transition: 250ms;
+            text-indent: -9999px;
         }
 
     .project_row:nth-child(2) {
@@ -401,15 +414,16 @@ footer h2 {
         height: 26px;
     }
 
-    .img_container:hover, .img_container:active {
-        height: var(--largeIMG);
-        opacity: 100%;
-        transition: 250ms;
-    }
+        .img_container img {
+            max-width: var(--largeIMG);
+        }
 
-    .img_container img {
-        max-width: var(--largeIMG);
-    }
+        .img_container:hover, .img_container:active {
+            height: var(--largeIMG);
+            opacity: 100%;
+            transition: 250ms;
+            text-indent: -9999px;
+        }
 
     #contact_nav a {
         width: 40px;

@@ -22,7 +22,7 @@
     --rounderEdge: 25px;
     --globalMar: 1em;
     --globalPad: 1em;
-    --largeIMG: 424px;
+    --largeIMG: 380px;
     --largerIMG: 720px;
     /*fonts*/
     --defaultFont: 'Roboto', sans-serif;
@@ -310,6 +310,7 @@ footer h2 {
     }
 
 /*ALL MEDIA QUERIES*/
+/*SMALL WINDOW DISPLAY*/
 @media only screen and (max-width: 1080px) {
     .project_row {
         flex-direction: column-reverse;
@@ -342,6 +343,7 @@ footer h2 {
     }
 }
 
+/*PHONE DISPLAY*/
 @media only screen and (max-width: 748px) {
     /*FONT SIZES*/
     h1, h2, h3, h4, h5, h6 {
@@ -368,7 +370,7 @@ footer h2 {
         height: 26px;
     }
 
-    .img_container:active {
+    .img_container:hover, .img_container:active {
         height: var(--largeIMG);
         opacity: 100%;
         transition: 250ms;

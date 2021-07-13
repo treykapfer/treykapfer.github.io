@@ -395,4 +395,9 @@ footer h2 {
         #linkedin {
             background-image: url('img/linkedin_color.png');
         }
+
+    header img, header nav a {
+        margin: .5em;
+    }
+    
 }

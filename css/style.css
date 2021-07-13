@@ -1,36 +1,11 @@
-/*import Roboto and Encode*/
 @import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC&family=Roboto&family=Roboto+Slab&display=swap');
-@import url('wave.css');
 @import url('keyframes.css');
-@import url('glitch.css');
-/*font-family: 'Encode Sans SC', sans-serif;*/
+@import url('root.css');
+
+/* font-family: 'Encode Sans SC', sans-serif; */
 /* font-family: 'Roboto', sans-serif; */
 /* font-family: 'Roboto Slab', serif; */
 
-
-/* GLOBAL VARIABLES */
-:root {
-    /*color scheme*/
-    --defaultColor: white;
-    --secondaryColor: black;
-    --tertiaryColor: rgb(53, 143, 184);
-    --impactLight: black;
-    --dangerDark: black;
-    --dangerLight: black;
-    --highlight: rgb(168, 214, 235);
-    /* sizes */
-    --tinyEdge: 5px;
-    --roundEdge: 10px;
-    --rounderEdge: 25px;
-    --globalMar: 1em;
-    --globalPad: 1em;
-    --largeIMG: 380px;
-    --largerIMG: 720px;
-    /*fonts*/
-    --defaultFont: 'Roboto', sans-serif;
-    --impactFont: 'Encode Sans SC', sans-serif;
-    --secondaryFont: 'Roboto Slab', serif;
-}
 
 /*SET DEFAULTS*/
 /*CLEAR MARGIN AND PADDING*/

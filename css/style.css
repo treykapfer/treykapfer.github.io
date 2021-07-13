@@ -454,6 +454,12 @@ footer h2 {
         margin: .5em;
     }
 
-    /*chanage*/
-    
+    /*change links*/
+    header nav a, main nav a {
+        border-bottom: 2px solid var(--tertiaryColor);
+    }
+
+    #about a {
+        color: var(--highlight);
+    }
 }

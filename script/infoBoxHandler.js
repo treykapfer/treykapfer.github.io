@@ -1,7 +1,7 @@
 const infoBoxHandler = (clickedId) => {
     thisId = document.getElementById(clickedId).id;
     infoBox = document.getElementById('info_bar');
-    console.log(thisId);
+
     if (thisId === "phone_number") {
         infoBox.innerHTML = "(913)669-0379";
     }

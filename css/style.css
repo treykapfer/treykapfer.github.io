@@ -275,31 +275,31 @@ footer h2 {
 
     /*IMAGES AND HOVER EFFECTS*/
         #phone_number {
-            background-image: url('img/phone_bw.png');
+            background-image: url('../img/phone_bw.png');
         }
             #phone_number:hover {
-                background-image: url('img/phone_color.png');
+                background-image: url('../img/phone_color.png');
             }
 
         #email {
-            background-image: url('img/gmail_bw.png');
+            background-image: url('../img/gmail_bw.png');
         }
             #email:hover {
-                background-image: url('img/gmail_color.png');
+                background-image: url('../img/gmail_color.png');
             }
 
         #github {
-            background-image: url('img/github_bw.png');
+            background-image: url('../img/github_bw.png');
         }
             #github:hover {
-                background-image: url('img/github_color.png');
+                background-image: url('../img/github_color.png');
             }
 
         #linkedin {
-            background-image: url('img/linkedin_bw.png');
+            background-image: url('../img/linkedin_bw.png');
         }
             #linkedin:hover {
-                background-image: url('img/linkedin_color.png');
+                background-image: url('../img/linkedin_color.png');
             }
 
         #phone_number, #email, #github, #linkedin {
@@ -385,16 +385,16 @@ footer h2 {
 
     /*no hover - change to color*/
         #phone_number {
-            background-image: url('img/phone_color.png');
+            background-image: url('../img/phone_color.png');
         }
         #email {
-            background-image: url('img/gmail_color.png');
+            background-image: url('../img/gmail_color.png');
         }
         #github {
-            background-image: url('img/github_color.png');
+            background-image: url('../img/github_color.png');
         }
         #linkedin {
-            background-image: url('img/linkedin_color.png');
+            background-image: url('../img/linkedin_color.png');
         }
 
     header img, header nav a {

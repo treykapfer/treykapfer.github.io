@@ -175,28 +175,40 @@ main, footer, #contact_container {
     height: 30em;
     width: 85%;
 
-    background-image: url('../img/tv_noise_gif.gif');
-    background-size: cover;
+    background-image: url('../img/tv_noise_reduce.gif');
     background-position-x: center;
+    background-size: cover;
 
-    -moz-box-shadow:    inset 0 0 1em #000000;
-    -webkit-box-shadow: inset 0 0 1em #000000;
-    box-shadow:         inset 0 0 1em #000000;
+    -moz-box-shadow:    inset 0 1em 1em #000000;
+    -webkit-box-shadow: inset 0 1em 1em #000000;
+    box-shadow:         inset 0 1em 1em #000000;
 
     -webkit-animation: blackFadeInOut 5s infinite; /* Safari 4+ */
     -moz-animation:    blackFadeInOut 5s infinite; /* Fx 5+ */
     -o-animation:      blackFadeInOut 5s infinite; /* Opera 12+ */
     animation:         blackFadeInOut 5s infinite; /* IE 10+, Fx 29+ */
 
-    border: 2px solid var(--defaultColor);
-    
 }
+
 
     #title h1 {
         font-size: 7em;
+        background-color: rgba(0, 0, 0, 0.1);
+
+        -webkit-animation: textFlicker 5s infinite; /* Safari 4+ */
+        -moz-animation:    textFlicker 5s infinite; /* Fx 5+ */
+        -o-animation:      textFlicker 5s infinite; /* Opera 12+ */
+        animation:         textFlicker 5s infinite; /* IE 10+, Fx 29+ */
     }
+
     #scrolling_title {
         font-size: 1.5em;
+        background-color: rgba(0, 0, 0, 0.1);
+
+        -webkit-animation: textFlicker 5s infinite; /* Safari 4+ */
+        -moz-animation:    textFlicker 5s infinite; /* Fx 5+ */
+        -o-animation:      textFlicker 5s infinite; /* Opera 12+ */
+        animation:         textFlicker 5s infinite; /* IE 10+, Fx 29+ */
     }
 
     .big_p {
@@ -370,14 +382,19 @@ footer h2 {
         font-size: 5.5em;
     }
     .big_p {
-        font-size: 1.5em;
+        font-size: 1.25em;
     }
+
     h2 {
         font-size: 3em;
     }
 
     .img_container {
         width: var(--largeIMG);
+    }
+
+    header {
+        height: 6em;
     }
 
     header img {

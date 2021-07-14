@@ -251,6 +251,11 @@ h2 {
             text-align: left;
         }
 
+        .project_content nav a {
+            font-size: 2em;
+        }
+
+
 /* FOOTER */
 footer h2 {
     margin-right: .5em;
@@ -370,6 +375,11 @@ footer h2 {
     #title h1 {
         font-size: 3em;
     }
+
+    .project_content nav a {
+        font-size: 1.25em;
+    }
+    
     .big_p, header nav a {
         font-size: 1em;
     }

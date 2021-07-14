@@ -224,7 +224,7 @@ h2 {
 
     .img_container {
         width: var(--largeIMG);
-        height: auto;
+        height: var(--largeIMG);
         opacity: 75%;
         border: 1px solid var(--defaultColor);
         border-radius: var(--roundEdge);
@@ -232,7 +232,7 @@ h2 {
     }
 
         .img_container img {
-            width: fit-content;
+            width: var(--largeIMG);
             object-fit: scale-down;
             border-radius: var(--roundEdge);
         }

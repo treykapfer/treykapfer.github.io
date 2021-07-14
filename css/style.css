@@ -339,6 +339,10 @@ footer h2 {
         font-family: var(--impactFont);
     }
 
+    .img_container img {
+        width: var(--largerIMG);
+    }
+
     .img_container p {
         text-align: left;
         display: inline-block;

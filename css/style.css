@@ -343,6 +343,7 @@ footer h2 {
         text-align: left;
         display: inline-block;
         position: absolute;
+        background-image: linear-gradient(to right, black, rgba(0, 0, 0, 0));
     }
     
     /*change this to a javascript on click*/
@@ -379,7 +380,7 @@ footer h2 {
     .project_content nav a {
         font-size: 1.25em;
     }
-    
+
     .big_p, header nav a {
         font-size: 1em;
     }

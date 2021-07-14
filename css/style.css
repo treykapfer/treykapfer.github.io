@@ -370,7 +370,7 @@ footer h2 {
     #title h1 {
         font-size: 3em;
     }
-    .big_p {
+    .big_p, header nav a {
         font-size: 1em;
     }
 
@@ -387,7 +387,7 @@ footer h2 {
     }
 
     header img {
-        height: 20px;
+        height: 26px;
     }
 
     /*IMG CONTAINER*/

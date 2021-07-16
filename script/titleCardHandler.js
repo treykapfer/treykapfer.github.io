@@ -9,7 +9,7 @@ titleCard = () => {
     i++;
     /*glitch animation*/
 
-    setTimeout(()=> {titleCard()}, 7000);
+    setTimeout(()=> {titleCard()}, 6000);
 }
 
 titleCard();

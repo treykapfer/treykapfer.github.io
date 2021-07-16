@@ -12,6 +12,6 @@ const infoBoxHandler = (clickedId) => {
         infoBox.innerHTML = "github.com/treykapfer";
     }
     else {
-        infoBox.innerHTML = "https://www.linkedin.com/in/trey-kapfer-252ab5103/";
+        infoBox.innerHTML = "https://www.linkedin.com/in/trey-kapfer/";
     }
 }

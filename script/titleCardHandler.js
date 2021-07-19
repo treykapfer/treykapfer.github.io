@@ -7,8 +7,6 @@ titleCard = () => {
     /*loop through the title card array*/
     document.getElementById('scrolling_title').innerHTML = titleCardArr[i];
     i++;
-    /*glitch animation*/
-
     setTimeout(()=> {titleCard()}, 6000);
 }
 

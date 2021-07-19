@@ -103,8 +103,7 @@ header {
     width: 100%;
     align-items: flex-start;
 }
-/*add js script that has the nav appear when you load
-but defaults to 0 opacity otherwise*/
+
     nav a:hover {
         opacity: 1;
         transition: 250ms;
@@ -329,34 +328,16 @@ footer h2 {
 
     .img_container {
         width: var(--largerIMG);
-        height: 1em;
+        height: var(--largerIMG);
         border: none;
         overflow: hidden;
         margin-top: 2em;
-        opacity: 50%;
-        cursor: pointer;
-        text-indent: 1em;
         font-family: var(--impactFont);
     }
 
     .img_container img {
         width: var(--largerIMG);
     }
-
-    .img_container p {
-        text-align: left;
-        display: inline-block;
-        position: absolute;
-        background-image: linear-gradient(to right, black, rgba(0, 0, 0, 0));
-    }
-    
-    /*change this to a javascript on click*/
-        .img_container:hover, .img_container:active {
-            height: var(--largerIMG);
-            opacity: 100%;
-            transition: 250ms;
-            text-indent: -9999px;
-        }
 
     .project_row:nth-child(2) {
         flex-direction: column-reverse;
@@ -369,7 +350,7 @@ footer h2 {
 
 /*PHONE DISPLAY*/
 @media only screen and (max-width: 748px) {
-    /*FONT SIZES*/
+/*FONT SIZES*/
     h1, h2, h3, h4, h5, h6 {
         font-size: 2em;
     }
@@ -393,10 +374,7 @@ footer h2 {
         font-size: 2.5em;
     }
 
-    .img_container {
-        width: var(--largeIMG);
-    }
-
+/*HEADER*/
     header {
         padding: 10px;
         height: 5em;
@@ -406,18 +384,33 @@ footer h2 {
         height: 26px;
     }
 
-    /*IMG CONTAINER*/
-    .img_container img {
-        max-width: var(--largeIMG);
-    }
-
-    .img_container:hover, .img_container:active {
-        height: var(--largeIMG);
-        opacity: 100%;
+/*IMG CONTAINER*/
+    .img_container {
+        width: var(--largeIMG);
+        height: 1em;
+        cursor: pointer;
+        opacity: 65%;
         transition: 250ms;
-        text-indent: -9999px;
     }
 
+    .img_container p {
+        text-align: left;
+        display: inline-block;
+        position: absolute;
+        background-image: linear-gradient(to right, black, rgba(0, 0, 0, 0));
+    }
+
+        .img_container img {
+            max-width: var(--largeIMG);
+        }
+
+        /* .img_container:hover, .img_container:active {
+            height: var(--largeIMG);
+            opacity: 100%;
+            text-indent: -9999px;
+        } */
+
+/*TITLE AND CONTACT NAV*/
     #contact_nav a {
         width: 40px;
         height: 40px;
@@ -446,7 +439,7 @@ footer h2 {
         margin: .5em;
     }
 
-    /*change links*/
+/*change links*/
     header nav a, main nav a {
         border-bottom: 2px solid var(--tertiaryColor);
     }

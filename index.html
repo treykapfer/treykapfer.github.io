@@ -32,7 +32,7 @@
                 <h2>Portfolio</h2>
                 <div class="row_container">
                     <div class="project_row">
-                        <div class="img_container">
+                        <div class="img_container" id="wow_blog_img" onclick = tapHandler(this.id)>
                             <p>...tap to show</p>
                             <img src="img/WoW-Screenshot.png" alt="image failed to load...">
                         </div>
@@ -47,7 +47,7 @@
                     </div>
 
                     <div class="project_row">
-                        <div class="img_container">
+                        <div class="img_container" id="junta_commander_img" onclick = tapHandler(this.id)>
                             <p>...tap to show</p>
                             <img src="img/JuntaSS4-Cropped.png" alt="image failed to load...">
                         </div>
@@ -62,7 +62,7 @@
                     </div>
 
                     <div class="project_row">
-                        <div class="img_container">
+                        <div class="img_container" id="ghoul_grinder_img" onclick = tapHandler(this.id)>
                             <p>...tap to show</p>
                             <img src="img/ghoul_grinder.png" alt="image failed to load...">
                         </div>
@@ -106,5 +106,6 @@
     <!-- SCRIPTS -->
     <script src="script/infoBoxHandler.js"></script>
     <script src="script/titleCardHandler.js"></script>
+    <script src="script/mobileTapHandler.js"></script>
 </body>
 </html>

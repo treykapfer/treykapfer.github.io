@@ -449,6 +449,8 @@ footer h2 {
     }
 }
 
+/*fix project content*/
+
 /* specifically iphoneX and old devices*/
 @media only screen and (max-width: 400px) {
 
@@ -458,5 +460,9 @@ footer h2 {
 
     .img_container img {
         max-width: var(--iPhoneIMG);
+    }
+
+    .project_content {
+        margin: .25em;
     }
 }

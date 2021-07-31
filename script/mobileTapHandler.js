@@ -13,6 +13,7 @@ const tapHandler = (clickedId) => {
         }
 
         else {
+            //check if its a skinny screen
             if (currentWidth <= 400) {
                 currentId.style.height = "296px"
             } else {

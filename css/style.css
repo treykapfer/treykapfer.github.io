@@ -448,3 +448,15 @@ footer h2 {
         color: var(--highlight);
     }
 }
+
+/* specifically iphoneX and old devices*/
+@media only screen and (max-width: 400px) {
+
+    .img_container {
+        width: var(--iPhoneIMG);
+    }
+
+    .img_container img {
+        max-width: var(--iPhoneIMG);
+    }
+}

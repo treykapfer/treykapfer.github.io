@@ -213,11 +213,11 @@ h2 {
     text-align: center;
 }
 
-    .project_row:nth-child(2) {
+    .project_row:nth-child(even) {
         flex-direction: row-reverse;
     }
 
-        /* .project_row:nth-child(2) p {
+        /* .project_row:nth-child(even) p {
             text-align: right;
         } */
 
@@ -339,7 +339,7 @@ footer h2 {
         width: var(--largerIMG);
     }
 
-    .project_row:nth-child(2) {
+    .project_row:nth-child(even) {
         flex-direction: column-reverse;
     }
 

@@ -1,4 +1,4 @@
-const titleCardArr = ["Front-End Engineer", "Full Stack Developer", "Designer", "Game Developer", "UX/UI Designer", "Hobbyist", "World Creator", "All Around Cool Guy"]
+const titleCardArr = ["Front-End Developer", "Analyst", "Hobbyist", "Designer", "World Creator", "All Around Cool Guy"]
 let i = 0;
 
 titleCard = () => {
